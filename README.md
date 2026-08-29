@@ -346,6 +346,13 @@ The production architecture has not yet been selected. The current prototype sho
 
 ```text
 music-as-medicine-app/
+├── .openai/
+│   └── hosting.json
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── prototype-experience.tsx
 ├── README.md
 ├── design-assets/
 │   └── music-as-medicine-social-preview.png
@@ -360,21 +367,14 @@ music-as-medicine-app/
 │   ├── decision-log.md
 │   ├── planning-audit-01.md
 │   └── user-journey-audit-01.md
-└── prototype/
-    ├── .openai/hosting.json
-    ├── app/
-    │   ├── globals.css
-    │   ├── layout.tsx
-    │   ├── page.tsx
-    │   └── prototype-experience.tsx
-    ├── public/
-    │   ├── cassette-tape-brand.svg
-    │   ├── favicon.svg
-    │   └── og.png
-    ├── package.json
-    ├── package-lock.json
-    ├── tsconfig.json
-    └── vite.config.ts
+├── public/
+│   ├── cassette-tape-brand.svg
+│   ├── favicon.svg
+│   └── og.png
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
 ## Running the prototype locally
@@ -387,7 +387,6 @@ music-as-medicine-app/
 ### Install and start
 
 ```bash
-cd prototype
 npm install
 npm run dev
 ```
@@ -397,7 +396,6 @@ Open the local address printed by the development server.
 ### Production-style build
 
 ```bash
-cd prototype
 npm run build
 npm run start
 ```
